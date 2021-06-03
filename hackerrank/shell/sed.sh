@@ -1,0 +1,1 @@
+sed -e 's/thy/{&}/gI' -> Replaces words starting with thy/Thy with {thy} or {Thy} respectively
