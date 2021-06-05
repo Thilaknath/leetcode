@@ -4,7 +4,7 @@ function reverseStr(s,k) {
 
     console.log(r)
     console.log(g)
-    return r.split('').reverse().join("") + g
+    return r.c + g
 }
 
 console.log(reverseStr('abcdefg', 2))
