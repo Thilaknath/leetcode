@@ -1,4 +1,4 @@
 NAME                                                        READY   STATUS    RESTARTS   AGE
 alertmanager-kube-prometheus-stack-alertmanager-0           2/2     Running   0          4d11h
 alertmanager-kube-prometheus-stack-alertmanager-1           2/2     Running   0          4d11h
-
+alertmanager-kube-prometheus-stack-alertmanager-2           2/2     Failed    0          4d11h
