@@ -2,12 +2,4 @@ Summary
 DevOps Engineer with proven experience helping teams transition to cloud native development.
 Demonstrated experience in site reliability engineering, production support and enabling CI/CD for agile teams.
 Passionate about automation, deployment of scalable (microservices based) & observable solutions with Cloud native technologies.
-
-Professional Experience
-SRE/DevOps Engineer 	Business Technology Platform | SAP		Remote 			Dec ’20 – Present
-•	Deliver and Operate SAP Enterprise Mesh kernel service ensuring continuous availability.
-•	Setup Monitoring and Alerting based on Kube-Prometheus-stack (Prometheus, Thanos)
-•	Manage and configure 3rd party deployments (Istio, Jaeger, Fluentd) using Helm and Jenkins across multiple Kubernetes landscapes.
-•	Kubernetes cluster provisioning and management using gardener-cli on AWS, GCP.
-•	Harden public images and cluster access to ensure compliance and security standards.
-•	Working to split deployments out of Jenkins to Argo CD as a move to embrace GitOps.
+Working to jenkins deployments out of  to jenkins CD as a move to embrace GitOps.

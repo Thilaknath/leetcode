@@ -4,6 +4,7 @@ const fs = require('fs')
 const wc = require('count-words')
 let parsed;
 
+// Convert to array
 function readResume1 (filepath) {
   fs.readFile(filepath, 'utf8', (err, data) => {
     if (err) {
@@ -29,4 +30,30 @@ function readResume1 (filepath) {
   })
 }
 
+// Without converting to array
+function readResume2 (filepath) {
+  fs.readFile(filepath, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err)
+      return
+    }
+  
+    let usedTech = ["Helm", "Kube", "Kubernetes", "Docker", "Git", "Ansible", "Java", "Prometheus", "Grafana", "Jaeger", "Jenkins"].map(function (v) {
+      return v.toLowerCase();
+    })
+  
+    let resumeTech = wc(data.toLowerCase())
+
+    let knownSkills = Object.keys(resumeTech)
+    .filter(key => usedTech.includes(key))
+    .reduce((obj, key) => {
+      obj[key] = resumeTech[key];
+      return obj;
+    }, {})
+       
+    console.log(knownSkills) 
+  })
+}
+
 readResume1('./resume.txt')
+readResume2('./podLogs.txt')
